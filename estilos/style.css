@@ -1,0 +1,159 @@
+@charset 'UTF-8';
+
+/* ## Colors
+
+- White: hsl(0, 0%, 100%)
+- Stone 100: hsl(30, 54%, 90%)
+- Stone 150: hsl(30, 18%, 87%)
+- Stone 600: hsl(30, 10%, 34%)
+- Stone 900: hsl(24, 5%, 18%)
+- Brown 800: hsl(14, 45%, 36%)
+- Rose 800: hsl(332, 51%, 32%)
+- Rose 50: hsl(330, 100%, 98%)
+ */
+/* ## Typography
+
+### Body Copy
+
+- Font size (paragraph): 16px
+
+### Fonts
+
+- Family: [Young Serif](https://fonts.google.com/specimen/Young+Serif)
+- Weights: 400
+
+- Family: [Outfit](https://fonts.google.com/specimen/Outfit)
+- Weights: 400, 600, 700
+ */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /* cores */
+    --Stone100: hsl(30, 54%, 90%);
+    --Stone150: hsl(30, 18%, 87%);
+    --Stone600: hsl(30, 10%, 34%);
+    --Stone900: hsl(24, 5%, 18%);
+    --Brown800: hsl(14, 45%, 36%);
+    --Rose800: hsl(332, 51%, 32%);
+    --Rose50: hsl(330, 100%, 98%);
+    /* fontes */
+    --fonte1:'Young serif';
+    --fonte2:'Outfit';
+}
+body{
+    font-family:var(--fonte2);
+    font-weight: 400;
+    font-size: 16px;
+    background-color: var(--Stone100);
+}
+hr{
+    margin: 30px 0px;
+}
+header{
+    background-color: white;
+}
+header img{
+    width: 100%;
+    
+}
+main{
+    padding: 30px;
+    background-color: white;
+}
+main h1{
+    font-family: var(--fonte1);
+    font-weight: 400;
+    line-height: 30px;
+}
+main p{
+    padding: 20px 0px;
+    color: var(--Stone600);
+}
+main section#secao{
+    padding: 10px;
+    background-color:var(--Rose50) ;
+    border-radius: 20px;
+    margin: 10px;
+}
+section#secao article#tempo h3{
+    color: var(--Rose800);
+    padding: 10px;
+}
+span.cor{
+    color: var(--Stone600);
+    font-family: var(--fonte2);
+    font-weight: 400;
+}
+
+article#tempo ul{
+    list-style-position: inside;
+    
+}
+
+article#tempo li{
+    padding: 10px;
+    color: var(--Rose800);
+}
+article#ingredientes{
+    padding: 10px;
+}
+article#ingredientes h2{
+    font-family: var(--fonte1);
+    font-weight: 400;
+    color: var(--Brown800);
+}
+article#ingredientes ul{
+    list-style-position: inside;
+    
+}
+article#ingredientes li{
+    padding: 10px;
+    color: var(--Brown800);
+}
+
+article#instrucoes h2{
+    font-family: var(--fonte1);
+    font-weight: 400;
+    color: var(--Brown800);
+}
+article#instrucoes ol{
+    list-style-position: inside;
+    color: var(--Brown800);
+    
+}
+article#instrucoes li{
+    padding: 10px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    
+}
+article#nutricao h2{
+    color: var(--Brown800);
+    font-family: var(--fonte1);
+}
+table{
+    width: 300px;
+    border-collapse: collapse;
+}
+td,th{
+    padding: 15px;
+    border-bottom: 1px solid var(--Stone600);
+    text-align: center;
+}
+th{
+    font-weight: normal;
+}
+td{
+    font-weight: bolder;
+    color: var(--Brown800);
+    text-align: left;
+}
+.linha{
+    border-bottom: none;
+}
