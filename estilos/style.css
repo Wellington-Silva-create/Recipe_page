@@ -56,7 +56,8 @@ hr{
     margin: 30px 0px;
 }
 header{
-    background-color: white;
+    margin: -30px;
+    margin-bottom: 30px;
 }
 header img{
     width: 100%;
